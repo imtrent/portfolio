@@ -12,7 +12,7 @@ const Footer = () => (
     <FooterWrapper>
         <Container className="large">
             <FooterContent>
-                <Copyright>© 2019 Ian Trent</Copyright>
+                <Copyright>© 2020 Ian Trent</Copyright>
                 <SocialWrapper>
                     <Social
                         href="https://twitter.com/ianmtrent"
