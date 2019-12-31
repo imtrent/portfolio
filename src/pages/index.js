@@ -13,6 +13,7 @@ import {
 import CTA from '../components/callToAction';
 import Layout from "../components/layout";
 
+import Decore from './../images/decore.png';
 import Moviac from './../images/moviac.png';
 import Techies from './../images/jobsfortechies.png';
 import SEO from "../components/seo";
@@ -43,14 +44,14 @@ const IndexPage = () => (
                 <Row>
                     <Column className="flex-6">
                         <ProjectPreview>
-                            <img src={Moviac} alt="Decore Preview" />
+                            <img src={Decore} alt="Decore Preview" />
                             <Subtitle margin="0 0 1rem 0">
                                 Decore
                             </Subtitle>
                             <Description fontSize="1.8rem" margin="0 0 3rem">
-                                Construct a layout that can be used as a bare-bones website starter template
+                                Construct a webpage layout that can be used as a bare-bones HTML/CSS starter template
                             </Description>
-                            <a href="https://site-builder.netlify.com/" target="_blank">
+                            <a href="https://site-builder.netlify.com/" target="_blank" rel="noopener noreferrer">
                                 <Direct fontBreakOne="1.6rem" fontSize="1.8rem">
                                     View Project
                                 </Direct>
@@ -70,7 +71,7 @@ const IndexPage = () => (
                             >
                                 React application that allows users to search through hundreds of thousands of movies using TMDb API
                             </Description>
-                            <a href="https://moviac.iantrent.com/" target="_blank">
+                            <a href="https://moviac.iantrent.com/" target="_blank" rel="noopener noreferrer">
                                 <Direct fontBreakOne="1.6rem" fontSize="1.8rem">
                                     View Project
                                 </Direct>
