@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { CTAWrapper, CTATitle, CTADescription } from './styles';
-import { Title } from '../settings/styles';
 
 
 const CTA = () => (
