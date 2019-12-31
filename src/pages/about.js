@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container } from '../components/grid/styles';
-import { Title, Description } from '../components/settings/styles';
+import { Title, Subtitle, Description } from '../components/settings/styles';
 import Layout from '../components/layout';
 import SEO from "../components/seo";
-import Ian from './../images/ian-trent.png';
+
 
 const AboutContent = styled.div`
-    img {
+    .portrait {
         margin: 50px 0;
     }
 
@@ -17,6 +17,37 @@ const AboutContent = styled.div`
         background-color: #e9fdeb;
         color: #2ccb3c;
     }
+
+    .last-desc {
+        margin-bottom: 10rem;
+    }
+`;
+
+const Logos = styled.div`
+    @media only screen and (max-width: 545px) {
+        flex-direction: column;
+    }
+    display: flex;
+    align-items: center;
+    margin: 3rem 0 20rem;
+
+    img {
+        @media only screen and (min-width: 545px) {
+            margin: 0 2.5rem 0 0;
+        }
+        margin: 0 0 2.5rem 0;
+        width: auto;
+        height: 55px;
+
+        &:nth-child(3n) {
+            height: 40px;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
 `;
 
 const AboutPage = () => (
@@ -25,7 +56,8 @@ const AboutPage = () => (
         <AboutContent>
             <Container className="medium">
                 <img
-                    src={Ian}
+                    className="portrait"
+                    src={require("./../images/iantrent.png")}
                     alt="Portrait of Ian Trent"
                     width="100%"
                 />
@@ -61,19 +93,31 @@ const AboutPage = () => (
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            SFP
+                            {' '}SFP
                         </a>
                     </span>
-                    , where I assist in building custom websites from scratch for
+                    , where I build custom websites from scratch for
                     clients, big and small.
                 </Description>
-                <Description fontSize="1.8rem" margin="0 0 10rem">
+                <Description fontSize="1.8rem" className="last-desc">
                     I like to spend my free time adding on to my web stack and
                     chasing my dreams of becomming a full-stack JavaScript
                     developer. Other than coding, I find myself playing a round of
                     golf, petting all the dogs I can, watching the newest series on
                     Netflix, or just enjoying life with my girlfriend, Annie.
                 </Description>
+            </Container>
+            <Container className="small">
+                <Subtitle>
+                    My Go-To Stack
+                </Subtitle>
+                <Logos>
+                    <img src={require("./../images/logos/react.png")} alt="React.js logo" title="React.js" />
+                    <img src={require("./../images/logos/nodejs.png")} alt="Node.js logo" title="Node.js" />
+                    <img src={require("./../images/logos/express.png")} alt="Express.js logo" title="Express.js" />
+                    <img src={require("./../images/logos/postgresql.png")} alt="PostgreSQL logo" title="PostgreSQL" />
+                    <img src={require("./../images/logos/sass.png")} alt="SASS logo" title="SCSS" />
+                </Logos>
             </Container>
         </AboutContent>
     </Layout>
