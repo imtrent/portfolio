@@ -43,24 +43,6 @@ const hideMenu = keyframes`
     }
 `;
 
-const borderIn = keyframes`
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-`;
-
-const borderOut = keyframes`
-    from {
-        width: 100%;
-    }
-    to {
-        width: 0;
-    }
-`;
-
 export const Menu = styled.div`
     opacity: 1;
     max-width: 1200px;
@@ -86,7 +68,6 @@ export const Menu = styled.div`
 
             &:after {
                 width: 100%;
-                animation: none !important;
                 background-color: white;
             }
         }
@@ -94,8 +75,7 @@ export const Menu = styled.div`
         &:hover {
             color: white;
             &:after {
-                animation: ${borderIn} 0.5s ease;
-                animation-fill-mode: both;
+                width: 100%;
                 background-color: white;
             }
         }
@@ -108,19 +88,13 @@ export const Menu = styled.div`
             width: 0;
             height: 2px;
             background-color: #a0a0a2;
-            transition: background-color 0.3s ease;
-            animation: ${borderOut} 0.5s ease;
-            animation-fill-mode: both;
+            transition: 0.3s ease;
         }
     }
 
     .active & {
         animation: ${showMenu} 0.4s ease both;
         animation-delay: 0.4s;
-    }
-
-    .hidden & {
-        /* animation: ${hideMenu} 0.4s cubic-bezier(0.645, 0.05, 0.355, 1) both; */
     }
 `;
 
@@ -137,8 +111,8 @@ export const Logo = styled.div`
         font-family: ${fontFamily.dmSerif};
 
         ${({ active }) =>
-            active &&
-            `
+        active &&
+        `
             color: white;
 
             &:hover {
@@ -157,15 +131,12 @@ export const Logo = styled.div`
             width: 0;
             height: 2px;
             background-color: ${colors.black};
-            transition: background-color 0.3s ease;
-            animation: ${borderOut} 0.5s ease;
-            animation-fill-mode: both;
+            transition: 0.5s ease;
         }
 
         &:hover {
             &:after {
-                animation: ${borderIn} 0.5s ease;
-                animation-fill-mode: both;
+                width: 100%;
             }
         }
     }
