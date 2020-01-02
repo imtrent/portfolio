@@ -111,7 +111,7 @@ const IndexPage = () => (
                                 <li>React</li>
                                 <li>Express</li>
                                 <li>Node</li>
-                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
                                 <li>Next.js</li>
                             </Tags>
                             <a href="javascript:void(0);">

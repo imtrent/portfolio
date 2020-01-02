@@ -39,8 +39,12 @@ const Logos = styled.div`
         width: auto;
         height: 55px;
 
-        &:nth-child(3n) {
+        &:first-child {
             height: 40px;
+        }
+
+        &:nth-child(2) {
+            height: 35px;
         }
 
         &:last-of-type {
@@ -112,10 +116,10 @@ const AboutPage = () => (
                     My Go-To Stack
                 </Subtitle>
                 <Logos>
+                    <img src={require("./../images/logos/mongo.png")} alt="MongoDB logo" title="MongoDB" />
+                    <img src={require("./../images/logos/express.png")} alt="Express.js logo" title="Express.js" />
                     <img src={require("./../images/logos/react.png")} alt="React.js logo" title="React.js" />
                     <img src={require("./../images/logos/nodejs.png")} alt="Node.js logo" title="Node.js" />
-                    <img src={require("./../images/logos/express.png")} alt="Express.js logo" title="Express.js" />
-                    <img src={require("./../images/logos/postgresql.png")} alt="PostgreSQL logo" title="PostgreSQL" />
                     <img src={require("./../images/logos/sass.png")} alt="SASS logo" title="SCSS" />
                 </Logos>
             </Container>
