@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import {
-    HeaderWrapper,
-    Navbar,
-    Logo,
-    Menu,
-    Navigation,
-    Socials
-} from './styles';
 import Hamburger from './hamburger';
-import { Container } from '../grid/styles';
 
 // Component
 const Header = () => {
@@ -48,21 +39,21 @@ const Header = () => {
     });
 
     return (
-        <HeaderWrapper className={scrolling ? 'stuck' : null}>
-            <Container className="large">
-                <Navbar>
-                    <Logo
-                        active={menu}
+        <header className={scrolling ? 'stuck' : null}>
+            <div className="grid-container large">
+                <div className="navbar">
+                    <div
+                        className={'logo ' + (menu ? 'active' : null)}
                         onClick={menu ? toggleMobileMenu : null}
                     >
                         <Link to="/">Ian Trent</Link>
-                    </Logo>
+                    </div>
                     <Hamburger
                         isToggled={menu}
                         toggleMobileMenu={toggleMobileMenu}
                     />
-                    <Navigation className={useClass}>
-                        <Menu>
+                    <nav className={useClass}>
+                        <div className="menu">
                             <Link
                                 to="/"
                                 exact
@@ -95,11 +86,11 @@ const Header = () => {
                             >
                                 Resume
                             </a>
-                        </Menu>
-                    </Navigation>
-                </Navbar>
-            </Container>
-        </HeaderWrapper>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
     );
 };
 

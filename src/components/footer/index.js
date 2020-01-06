@@ -1,44 +1,36 @@
 import React from 'react';
-import { Container } from '../grid/styles';
-import {
-    SocialWrapper,
-    Copyright,
-    FooterWrapper,
-    FooterContent,
-    Social
-} from './styles';
 
 const Footer = () => (
-    <FooterWrapper>
-        <Container className="large">
-            <FooterContent>
-                <Copyright>© 2020 Ian Trent</Copyright>
-                <SocialWrapper>
-                    <Social
+    <footer>
+        <div className="grid-container">
+            <div className="content">
+                <p>© 2020 Ian Trent</p>
+                <div>
+                    <a
                         href="https://twitter.com/ianmtrent"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Twitter
-                    </Social>
-                    <Social
+                    </a>
+                    <a
                         href="https://github.com/imtrent"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Github
-                    </Social>
-                    <Social
+                    </a>
+                    <a
                         href="https://www.linkedin.com/in/ianmtrent/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Linkedin
-                    </Social>
-                </SocialWrapper>
-            </FooterContent>
-        </Container>
-    </FooterWrapper>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 );
 
 export default Footer;

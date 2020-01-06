@@ -1,7 +1,7 @@
 import React from 'react';
-import { GlobalStyles } from './settings/styles';
 import Header from './header/index';
 import Footer from './footer/index';
+import './../styles/app.scss';
 
 const Layout = ({ children }) => {
     // const data = useStaticQuery(graphql`
@@ -15,13 +15,12 @@ const Layout = ({ children }) => {
     // `)
 
     return (
-        <div>
-            <GlobalStyles />
+        <React.Fragment>
             <Header />
             {children}
             <Footer />
-        </div>
-    )
-}
+        </React.Fragment>
+    );
+};
 
-export default Layout
+export default Layout;
