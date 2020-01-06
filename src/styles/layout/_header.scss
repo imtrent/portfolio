@@ -1,0 +1,193 @@
+header {
+    @include breakpoint(medium) {
+        margin: 0;
+    }
+    margin: 20px 0 0 0;
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    padding: 30px 0;
+    z-index: 2;
+
+    &.stuck {
+        border-bottom: 1px solid $border-color;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    @keyframes showMenu {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes hideMenu {
+        from {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+    }
+
+    .menu {
+        opacity: 1;
+        max-width: 1200px;
+        margin: rem-calc(160px) auto 0 auto;
+        padding: 0 rem-calc(20px);
+        font-size: rem-calc(32px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        a {
+            position: relative;
+            color: #a0a0a2;
+            margin-bottom: rem-calc(30px);
+            padding-bottom: rem-calc(5px);
+            letter-spacing: 1px;
+            transition: 0.3s ease;
+            font-family: 'DM Serif Text', serif;
+
+            &.active {
+                color: white;
+
+                &:after {
+                    width: 100%;
+                    background-color: white;
+                }
+            }
+
+            &:hover {
+                color: white;
+                &:after {
+                    width: 100%;
+                    background-color: white;
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #a0a0a2;
+                transition: 0.3s ease;
+            }
+        }
+
+        .active & {
+            animation: showMenu 0.4s ease both;
+            animation-delay: 0.4s;
+        }
+    }
+
+    .logo {
+        z-index: 2;
+
+        &.active {
+            a {
+                color: white;
+
+                &:hover {
+                    color: white !important;
+                    &:after {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+
+        a {
+            position: relative;
+            margin: 0;
+            color: $black;
+            font-size: rem-calc(20px);
+            font-weight: normal;
+            transition: 0.3s ease;
+            letter-spacing: 1px;
+            font-family: $secondary-font;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $black;
+                transition: 0.5s ease;
+            }
+
+            &:hover {
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+header {
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        transform: translateY(-100%);
+        transition: 0.3s ease;
+        z-index: 1;
+
+        &.active {
+            display: block;
+            visibility: visible;
+            animation: slideIn 0.4s cubic-bezier(0.645, 0.05, 0.355, 1) both;
+            animation-fill-mode: both;
+            animation-play-state: running;
+        }
+
+        &.hidden {
+            display: block;
+            transform: translateY(-100%);
+            animation: slideOut 0.4s cubic-bezier(0.645, 0.05, 0.355, 1) both;
+            /* animation-delay: 0.4s; */
+            animation-fill-mode: both;
+            animation-play-state: running;
+        }
+    }
+}

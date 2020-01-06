@@ -1,0 +1,111 @@
+// MOVE BELOW TO NEW FILE (homepage)
+main {
+    margin: rem-calc(100px) 0;
+
+    @include breakpoint(medium) {
+        margin: rem-calc(200px) 0;
+    }
+}
+// MOVE ABOVE TO NEW FILE
+
+img {
+    width: 100%;
+    margin-bottom: rem-calc(30px);
+}
+
+.grid-container {
+    &.medium {
+        max-width: 1000px;
+    }
+    &.small {
+        max-width: 900px;
+    }
+}
+
+h1 {
+    color: $black;
+    font-size: rem-calc(30px);
+    font-weight: normal;
+    line-height: 1.2;
+    font-family: $secondary-font;
+
+    span {
+        color: $primary-color;
+    }
+
+    svg {
+        position: relative;
+        top: 5px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: rem-calc(32px);
+        max-width: 850px;
+        letter-spacing: 1px;
+    }
+
+    @include breakpoint(large) {
+        font-size: rem-calc(48px);
+        max-width: 1000px;
+    }
+}
+
+h2 {
+    color: $black;
+    font-weight: normal !important;
+    letter-spacing: 1px;
+    font-size: rem-calc(24px);
+    font-family: $secondary-font;
+}
+
+@keyframes bounce {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 10px;
+    }
+    40% {
+        left: 0;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 10px;
+    }
+    40% {
+        left: 0;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+.link {
+    font-size: rem-calc(18px);
+    border-bottom: 1px solid lighten($medium-gray, 35%);
+    padding-bottom: rem-calc(10px);
+    color: $black;
+    transition: 0.3s ease;
+    display: inline-block;
+    font-weight: 300;
+
+    .arrow {
+        position: relative;
+        animation: bounce 3s infinite;
+        animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+    }
+
+    &:hover {
+        color: $black;
+        border-color: $black;
+    }
+}
