@@ -1,3 +1,32 @@
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes showMenu {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
 header {
     @include breakpoint(medium) {
         margin: 0;
@@ -18,28 +47,6 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-    }
-
-    @keyframes showMenu {
-        from {
-            opacity: 0;
-            transform: translateY(100px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-
-    @keyframes hideMenu {
-        from {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-        to {
-            opacity: 0;
-            transform: translateY(100px);
-        }
     }
 
     .menu {
@@ -89,11 +96,6 @@ header {
                 transition: 0.3s ease;
             }
         }
-
-        .active & {
-            animation: showMenu 0.4s ease both;
-            animation-delay: 0.4s;
-        }
     }
 
     .logo {
@@ -142,24 +144,6 @@ header {
     }
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes slideOut {
-    from {
-        transform: translateY(0%);
-    }
-    to {
-        transform: translateY(100%);
-    }
-}
-
 header {
     nav {
         display: none;
@@ -179,6 +163,11 @@ header {
             animation: slideIn 0.4s cubic-bezier(0.645, 0.05, 0.355, 1) both;
             animation-fill-mode: both;
             animation-play-state: running;
+
+            .menu {
+                animation: showMenu 0.4s ease both;
+                animation-delay: 0.4s;
+            }
         }
 
         &.hidden {
