@@ -16,7 +16,7 @@ const Contact = () => {
                     data-netlify
                     data-netlify-honeypot="bot-field"
                 >
-                    <div className="input-group">
+                    <div className="form-group">
                         <div className="input">
                             <label htmlFor="name">Name</label>
                             <input type="text" id="name" name="name" />
@@ -28,13 +28,13 @@ const Contact = () => {
                     </div>
                     <div className="input">
                         <label htmlFor="subject">Subject</label>
-                        <input type="subject" id="subject" name="subject" />
+                        <input type="text" id="subject" name="subject" />
                     </div>
                     <div className="input">
                         <label htmlFor="message">Message</label>
                         <textarea name="message" id="message"></textarea>
                     </div>
-                    <button>Submit</button>
+                    <button className="button primary">Submit</button>
                 </form>
             </div>
         </Layout>
