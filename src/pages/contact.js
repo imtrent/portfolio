@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '../components/layout';
 
 const Contact = () => {
     return (
-        <Layout>
+        <Layout className="contact">
             <div className="grid-container medium">
                 <h1>Get In Touch</h1>
                 <p>
@@ -13,6 +13,7 @@ const Contact = () => {
                 <form
                     action="POST"
                     name="contact"
+                    action="/success"
                     data-netlify="true"
                     netlify-honeypot="bot-field"
                 >

@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const AboutPage = () => (
-    <Layout>
+    <Layout className="about">
         <SEO title="About Me" />
         <div className="grid-container medium">
             <img
@@ -15,10 +15,12 @@ const AboutPage = () => (
         </div>
         <div className="grid-container small">
             <h1>
-                Hi!{' '}
-                <span role="img" aria-label="Waiving hand">
-                    👋
-                </span>{' '}
+                Hi!
+                <img
+                    className="wave"
+                    src={require('./../images/wave.png')}
+                    alt=""
+                />
                 I&apos;m Ian Trent.
             </h1>
             <p>
@@ -53,33 +55,13 @@ const AboutPage = () => (
         </div>
         <div className="grid-container small">
             <h2>My Go-To Stack</h2>
-            <div class="logos">
-                <img
-                    src={require('./../images/logos/react.png')}
-                    alt="React.js logo"
-                    title="React.js"
-                />
-                <img
-                    src={require('./../images/logos/nodejs.png')}
-                    alt="Node.js logo"
-                    title="Node.js"
-                />
-                <img
-                    src={require('./../images/logos/sass.png')}
-                    alt="SASS logo"
-                    title="SCSS"
-                />
-                <img
-                    src={require('./../images/logos/mongo.png')}
-                    alt="MongoDB logo"
-                    title="MongoDB"
-                />
-                <img
-                    src={require('./../images/logos/express.png')}
-                    alt="Express.js logo"
-                    title="Express.js"
-                />
-            </div>
+            <ul class="stack">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+            </ul>
         </div>
     </Layout>
 );

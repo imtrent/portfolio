@@ -3,7 +3,7 @@ import Header from './header/index';
 import Footer from './footer/index';
 import './../styles/app.scss';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, className }) => {
     // const data = useStaticQuery(graphql`
     //     query SiteTitleQuery {
     //         site {
@@ -15,11 +15,11 @@ const Layout = ({ children }) => {
     // `)
 
     return (
-        <React.Fragment>
+        <div className="layout">
             <Header />
-            {children}
+            <div className={`wrapper ${className}`}>{children}</div>
             <Footer />
-        </React.Fragment>
+        </div>
     );
 };
 

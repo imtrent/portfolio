@@ -27,6 +27,29 @@ const IndexPage = () => (
                 <div className="cell large-6">
                     <div className="project">
                         <img
+                            src={require('./../images/jobsfortechies.png')}
+                            alt="Jobs for Techies Preview"
+                        />
+                        <h2>Jobs For Techies</h2>
+                        <p>
+                            Find your dream tech job with compaines all around
+                            the world.
+                        </p>
+                        <ul className="tags">
+                            <li>React</li>
+                            <li>Express</li>
+                            <li>Node</li>
+                            <li>MongoDB</li>
+                            <li>Next.js</li>
+                        </ul>
+                        <a href="javascript:void(0);" className="link">
+                            Coming Soon
+                        </a>
+                    </div>
+                </div>
+                <div className="cell large-6">
+                    <div className="project">
+                        <img
                             src={require('./../images/decore.png')}
                             alt="Decore Preview"
                         />
@@ -73,29 +96,6 @@ const IndexPage = () => (
                             rel="noopener noreferrer"
                         >
                             View Project
-                        </a>
-                    </div>
-                </div>
-                <div className="cell large-6">
-                    <div className="project">
-                        <img
-                            src={require('./../images/jobsfortechies.png')}
-                            alt="Jobs for Techies Preview"
-                        />
-                        <h2>Jobs For Techies</h2>
-                        <p>
-                            Find jobs in tech with companies all around the
-                            world.
-                        </p>
-                        <ul className="tags">
-                            <li>React</li>
-                            <li>Express</li>
-                            <li>Node</li>
-                            <li>MongoDB</li>
-                            <li>Next.js</li>
-                        </ul>
-                        <a href="javascript:void(0);" className="link">
-                            Coming Soon
                         </a>
                     </div>
                 </div>
