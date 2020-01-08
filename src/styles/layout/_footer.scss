@@ -5,6 +5,7 @@ footer {
     background-color: $light-gray;
     padding: 100px 0;
     font-family: $primary-font;
+    margin-top: rem-calc(150px);
 
     p {
         @include breakpoint(medium) {

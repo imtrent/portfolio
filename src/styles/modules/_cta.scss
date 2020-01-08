@@ -1,19 +1,20 @@
 .cta {
-    display: flex;
-    margin-bottom: rem-calc(200px);
-    flex-direction: column;
-
     @include breakpoint(medium) {
-        padding: rem-calc(50px);
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: $black;
+        padding: rem-calc(50px);
         border-radius: 3px;
     }
     @include breakpoint(large) {
         padding: rem-calc(60px) rem-calc(100px);
     }
+    display: flex;
+    margin: rem-calc(90px) 0 0 0;
+    padding: rem-calc(30px);
+    flex-direction: column;
+    background-color: $black;
+
 
     a {
         display: inline-block;
@@ -29,25 +30,21 @@
     }
 
     h3 {
-        color: $black;
         font-family: $secondary-font;
         font-size: rem-calc(32px);
         margin: 0 0 rem-calc(20px);
-
-        @include breakpoint(medium) {
-            color: $white;
-        }
+        color: $white;
     }
 
     p {
-        margin: 0;
+        @include breakpoint(medium) {
+            margin: 0;
+        }
+        margin: 0 0 rem-calc(20px);
         color: $black;
         font-family: $primary-font;
         font-size: rem-calc(18px);
         font-weight: 300;
-
-        @include breakpoint(medium) {
-            color: white;
-        }
+        color: $white;
     }
 }

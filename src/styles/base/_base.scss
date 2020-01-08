@@ -5,8 +5,23 @@ main {
     @include breakpoint(medium) {
         margin: rem-calc(200px) 0;
     }
+
+    p {
+        margin-bottom: rem-calc(30px);
+    }
 }
 // MOVE ABOVE TO NEW FILE
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.layout {
+    animation: fade 0.5s ease forwards;
+}
 
 img {
     width: 100%;
@@ -108,4 +123,8 @@ h2 {
         color: $black;
         border-color: $black;
     }
+}
+
+.wrapper {
+    min-height: calc(100vh - 314px);
 }

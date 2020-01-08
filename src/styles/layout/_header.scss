@@ -29,9 +29,9 @@
 
 header {
     @include breakpoint(medium) {
-        margin: 0;
+        margin: 20px 0 0 0;
     }
-    margin: 20px 0 0 0;
+    margin: 0;
     position: sticky;
     top: 0;
     background-color: $white;
