@@ -3,6 +3,11 @@
         margin-top: rem-calc(50px);
     }
 
+    .link {
+        padding: 0;
+        font-weight: 500;
+    }
+
     .wave {
         @include breakpoint(large) {
             width: 50px;

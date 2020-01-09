@@ -38,6 +38,16 @@ img {
 }
 
 h1 {
+    @include breakpoint(medium) {
+        font-size: rem-calc(32px);
+        max-width: 850px;
+        letter-spacing: 1px;
+    }
+
+    @include breakpoint(large) {
+        font-size: rem-calc(48px);
+        max-width: 1000px;
+    }
     color: $black;
     font-size: rem-calc(30px);
     font-weight: normal;
@@ -51,17 +61,6 @@ h1 {
     svg {
         position: relative;
         top: 5px;
-    }
-
-    @include breakpoint(medium) {
-        font-size: rem-calc(32px);
-        max-width: 850px;
-        letter-spacing: 1px;
-    }
-
-    @include breakpoint(large) {
-        font-size: rem-calc(48px);
-        max-width: 1000px;
     }
 }
 
@@ -103,6 +102,10 @@ h2 {
     }
 }
 
+a:focus {
+    color: $black;
+    border-color: $black;
+}
 
 .link {
     font-size: rem-calc(18px);
@@ -126,5 +129,5 @@ h2 {
 }
 
 .wrapper {
-    min-height: calc(100vh - 314px);
+    min-height: calc(100vh - 334px);
 }

@@ -28,7 +28,8 @@ footer {
             }
 
             &:hover {
-                color: $primary-color;
+                color: $black;
+                border-color: $black;
             }
         }
     }

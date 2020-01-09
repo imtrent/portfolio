@@ -1,5 +1,22 @@
 .contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
     h1 {
         margin-top: rem-calc(50px);
+    }
+}
+
+.success {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        max-width: 100%;
+    }
+
+    p {
+        margin-bottom: rem-calc(30px);
     }
 }
