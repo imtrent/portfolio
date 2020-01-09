@@ -15,10 +15,13 @@ const IndexPage = () => (
         <div className="grid-container">
             <main className="hero">
                 <h1>
-                    Ian Trent &mdash; Full-Stack JavaScript Developer based in
-                    Lafayette, Indiana.
+                    Ian Trent &mdash; Full-Stack Developer based in Lafayette,
+                    Indiana.
                 </h1>
-                <p>Focused on building innovative web applictions.</p>
+                <p>
+                    Focused on building compelling websites, and innovative web
+                    applications.
+                </p>
                 <Link to="/about" className="link">
                     Learn more about me <span className="arrow">-&gt;</span>
                 </Link>

@@ -11,7 +11,7 @@ const Contact = () => {
                     send me a message!
                 </p>
                 <form
-                    action="POST"
+                    method="POST"
                     name="contact"
                     action="/success"
                     data-netlify="true"

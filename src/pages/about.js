@@ -24,38 +24,37 @@ const AboutPage = () => (
                 I&apos;m Ian Trent.
             </h1>
             <p>
-                Currently, I am a junior at Purdue University in West Lafayette,
-                Indiana, working towards a bachelors degree in Web Programming
-                and Design. Throughout my college experience I have not only
-                grown my passion for web development, but have also found a love
-                for learning.
+                I’m a Full-Stack Developer focused on building compelling
+                websites, and innovative web applications. Currently, I am a
+                proud boilermaker working toward my bachelor’s degree in Web
+                Programming and Design at Purdue University.
             </p>
             <p>
-                When I’m not in class, I work as a front-end developer at
-                <span>
-                    <a
-                        href="http://sfp.net"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {' '}
-                        SFP
-                    </a>
-                </span>
-                , where I build custom websites from scratch for clients, big
-                and small.
+                As a Website Developer at{' '}
+                <a
+                    className="link"
+                    href="http://sfp.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    SFP
+                </a>
+                , I have had the opportunity to code along-side web development
+                professionals in notable projects. I value the ideas of
+                hard-work and persistence. These values have aided my career as
+                a developer and have shaped me into the person I am today.
             </p>
             <p>
                 I like to spend my free time adding on to my web stack and
-                chasing my dreams of becomming a full-stack JavaScript
-                developer. Other than coding, I find myself playing a round of
-                golf, petting all the dogs I can, watching the newest series on
-                Netflix, or just enjoying life with my girlfriend, Annie.
+                chasing my dream of becoming a software engineer. Other than
+                coding, I find myself binge-watching that new series on Netflix,
+                petting all the dogs I can, or scoping out the best burger joint
+                in town.
             </p>
         </div>
         <div className="grid-container small">
             <h2>My Go-To Stack</h2>
-            <ul class="stack">
+            <ul className="stack">
                 <li>React</li>
                 <li>Redux</li>
                 <li>Node.js</li>
