@@ -27,20 +27,34 @@ const Contact = () => {
                     <div className="form-group">
                         <div className="input">
                             <label htmlFor="name">Name</label>
-                            <input type="text" id="name" name="name" />
+                            <input type="text" id="name" name="name" required />
                         </div>
                         <div className="input">
                             <label htmlFor="email">Email</label>
-                            <input type="text" id="email" name="email" />
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                required
+                            />
                         </div>
                     </div>
                     <div className="input">
                         <label htmlFor="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" />
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                        />
                     </div>
                     <div className="input">
                         <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea
+                            name="message"
+                            id="message"
+                            required
+                        ></textarea>
                     </div>
                     <button className="button primary" type="submit">
                         Submit
