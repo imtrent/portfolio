@@ -4,7 +4,12 @@ import SEO from '../components/seo';
 
 const AboutPage = () => (
     <Layout className="about">
-        <SEO title="About Me" />
+        <SEO
+            title="About Me"
+            description="Currently, I am a
+                proud boilermaker working toward my bachelor’s degree in Web
+                Programming and Design at Purdue University."
+        />
         <div className="grid-container medium">
             <img
                 className="portrait"

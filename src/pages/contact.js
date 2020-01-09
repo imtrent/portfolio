@@ -1,9 +1,14 @@
 import React from 'react';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const Contact = () => {
     return (
         <Layout className="contact">
+            <SEO
+                title="Contact Me"
+                description="Have a project in mind, or just want to talk? Feel free to send me a message!"
+            />
             <div className="grid-container medium">
                 <h1>Get In Touch</h1>
                 <p>
