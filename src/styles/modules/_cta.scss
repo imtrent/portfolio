@@ -53,6 +53,10 @@
         color: $white;
     }
 
+    a {
+        font-size: rem-calc(16px);
+    }
+
     p {
         @include breakpoint(medium) {
             margin: 0;
