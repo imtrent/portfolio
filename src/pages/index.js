@@ -19,8 +19,8 @@ const IndexPage = () => (
                     Indiana.
                 </h1>
                 <p>
-                    Focused on building compelling websites, and innovative web
-                    applications.
+                    Focused on building compelling websites, and engineering
+                    innovative web applications.
                 </p>
                 <Link to="/about" className="link">
                     Learn more about me <span className="arrow">-&gt;</span>
