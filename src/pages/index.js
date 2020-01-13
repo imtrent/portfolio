@@ -39,11 +39,11 @@ const IndexPage = () => (
                             the world.
                         </p>
                         <ul className="tags">
-                            <li>React</li>
+                            <li>Vue</li>
                             <li>Express</li>
                             <li>Node</li>
                             <li>MongoDB</li>
-                            <li>Next.js</li>
+                            <li>Nuxt.js</li>
                         </ul>
                         <a href="javascript:void(0);" className="link">
                             Coming Soon
