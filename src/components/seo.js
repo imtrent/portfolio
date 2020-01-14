@@ -48,6 +48,10 @@ function SEO({ description, lang, meta, title }) {
                     content: metaDescription,
                 },
                 {
+                    property: `og:image`,
+                    content: require('./../images/og-image.jpg'),
+                },
+                {
                     property: `og:type`,
                     content: `website`,
                 },
@@ -66,6 +70,10 @@ function SEO({ description, lang, meta, title }) {
                 {
                     name: `twitter:description`,
                     content: metaDescription,
+                },
+                {
+                    property: `twitter:image`,
+                    content: require('./../images/og-image.jpg'),
                 },
             ].concat(meta)}
         />

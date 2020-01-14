@@ -9,8 +9,8 @@ import SEO from '../components/seo';
 const IndexPage = () => (
     <Layout>
         <SEO
-            title="Full-Stack JavaScript Developer"
-            description="Ian Trent &mdash; Full-Stack JavaScript Developer based in Lafayette, Indiana."
+            title="Full-Stack Developer"
+            description="Ian Trent &mdash; Full-Stack Developer based in Lafayette, Indiana."
         />
         <div className="grid-container">
             <main className="hero">
