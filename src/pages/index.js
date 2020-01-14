@@ -35,7 +35,7 @@ const IndexPage = () => (
                         />
                         <h2>Jobs For Techies</h2>
                         <p>
-                            Find your dream tech job with compaines all around
+                            Find your dream tech job with companies all around
                             the world.
                         </p>
                         <ul className="tags">
