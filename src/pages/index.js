@@ -63,6 +63,7 @@ const IndexPage = () => (
                         </p>
                         <ul className="tags">
                             <li>React</li>
+                            <li>Redux</li>
                             <li>Styled Components</li>
                         </ul>
                         <a
