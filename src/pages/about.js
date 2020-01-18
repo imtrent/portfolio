@@ -35,7 +35,7 @@ const AboutPage = () => (
                 Programming and Design at Purdue University.
             </p>
             <p>
-                As a Website Developer at{' '}
+                As a developer at{' '}
                 <a
                     className="link"
                     href="http://sfp.net"
@@ -44,7 +44,7 @@ const AboutPage = () => (
                 >
                     SFP
                 </a>
-                , I have had the opportunity to code along-side web development
+                , I have had the opportunity to work along-side web development
                 professionals in notable projects. I value the ideas of
                 hard-work and persistence. These values have aided my career as
                 a developer and have shaped me into the person I am today.

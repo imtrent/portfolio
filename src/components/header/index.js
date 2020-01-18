@@ -80,7 +80,7 @@ const Header = () => {
                                 Contact
                             </Link>
                             <a
-                                href="/files/Ian_Trent_Resume.pdf?download=n"
+                                href={'/pdfs/Ian_Trent_Resume_2020.pdf'}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
