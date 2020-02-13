@@ -67,7 +67,7 @@ const IndexPage = () => (
                             <li>Styled Components</li>
                         </ul>
                         <a
-                            href="https://site-builder.netlify.com/"
+                            href="https://de-core.netlify.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="link"
