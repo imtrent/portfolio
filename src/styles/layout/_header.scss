@@ -66,7 +66,7 @@ header {
             padding-bottom: rem-calc(5px);
             letter-spacing: 1px;
             transition: 0.3s ease;
-            font-family: 'DM Serif Text', serif;
+            font-family: $secondary-font;
 
             &.active {
                 color: white;

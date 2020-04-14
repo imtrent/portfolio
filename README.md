@@ -4,9 +4,11 @@
 
 ### About Me
 
-I’m a 20 year old front-end website developer who’s passionate about building interactive websites and compelling web applications. I spend my time doing that at SFP, where I work as a front-end web developer.
+I’m a Full-Stack Developer focused on building compelling websites, and innovative web applications. Currently, I am a proud boilermaker working toward my bachelor’s degree in Web Programming and Design at Purdue University.
 
-Other than looking at a computer screen, I’m a junior at Purdue University working towards a bachelor’s degree in web programming and design. I find myself enjoying a round of golf, pettings all the dogs I can, watching that new series on Netflix, or designing and building out a new side project of mine.
+As a developer at SFP, I have had the opportunity to work along-side web development professionals in notable projects. I value the ideas of hard-work and persistence. These values have aided my career as a developer and have shaped me into the person I am today.
+
+I like to spend my free time adding on to my web stack and chasing my dream of becoming a software engineer. Other than coding, I find myself binge-watching that new series on Netflix, petting all the dogs I can, or scoping out the best burger joint in town.
 
 ### Social Media
 

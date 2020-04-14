@@ -116,6 +116,17 @@ a:focus {
     display: inline-block;
     font-weight: 300;
 
+    &.no-line {
+        border-bottom: none;
+        padding-bottom: 0;
+        font-weight: 400;
+        color: $dark-gray;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
     .arrow {
         position: relative;
         animation: bounce 3s infinite;
