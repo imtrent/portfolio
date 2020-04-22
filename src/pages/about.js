@@ -64,7 +64,7 @@ const AboutPage = () => (
                 <li>Redux</li>
                 <li>Node.js</li>
                 <li>Express</li>
-                <li>MongoDB</li>
+                <li>PostgreSQL</li>
             </ul>
         </div>
     </Layout>
