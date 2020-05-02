@@ -7,13 +7,6 @@ const Footer = () => (
                 <p>© 2020 Ian Trent</p>
                 <div>
                     <a
-                        href="https://twitter.com/ianmtrent"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Twitter
-                    </a>
-                    <a
                         href="https://github.com/imtrent"
                         target="_blank"
                         rel="noopener noreferrer"
