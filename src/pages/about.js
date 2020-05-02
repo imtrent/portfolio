@@ -29,7 +29,7 @@ const AboutPage = () => (
                 I&apos;m Ian Trent.
             </h1>
             <p>
-                I’m a Full-Stack Developer focused on building compelling
+                I’m a Full Stack Developer focused on building compelling
                 websites, and innovative web applications. Currently, I am a
                 proud boilermaker working toward my bachelor’s degree in Web
                 Programming and Design at Purdue University.

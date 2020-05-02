@@ -9,13 +9,13 @@ import SEO from '../components/seo';
 const IndexPage = () => (
     <Layout>
         <SEO
-            title="Full-Stack Developer"
-            description="Ian Trent &mdash; Full-Stack Developer based in Lafayette, Indiana."
+            title="Full Stack Developer"
+            description="Ian Trent &mdash; Full Stack Developer based in Lafayette, Indiana."
         />
         <div className="grid-container">
             <main className="hero">
                 <h1>
-                    Ian Trent &mdash; Full-Stack Developer based in Lafayette,
+                    Ian Trent &mdash; Full Stack Developer based in Lafayette,
                     Indiana.
                 </h1>
                 <p>
@@ -62,7 +62,15 @@ const IndexPage = () => (
                         />
                         <h2>Whirley Pop Shop</h2>
                         <p>
-                            eCommerce site that sells everything and anything popcorn. Built during my internship at <a className="link no-line" href="https://sfp.net" target="_blank">SFP.</a>
+                            eCommerce site that sells everything and anything
+                            popcorn. Built during my internship at{' '}
+                            <a
+                                className="link no-line"
+                                href="https://sfp.net"
+                                target="_blank"
+                            >
+                                SFP.
+                            </a>
                         </p>
                         <ul className="tags">
                             <li>Laravel</li>
@@ -88,7 +96,15 @@ const IndexPage = () => (
                         />
                         <h2>Safe & Vault</h2>
                         <p>
-                            eCommerce site that sells security systems and equipment. Built during my internship at <a className="link no-line" href="https://sfp.net" target="_blank">SFP.</a>
+                            eCommerce site that sells security systems and
+                            equipment. Built during my internship at{' '}
+                            <a
+                                className="link no-line"
+                                href="https://sfp.net"
+                                target="_blank"
+                            >
+                                SFP.
+                            </a>
                         </p>
                         <ul className="tags">
                             <li>Laravel</li>
