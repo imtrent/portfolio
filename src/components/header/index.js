@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
   });
 
   return (
-    <header className={`sticky top-0 bg-white py-6 ${scrolling ? 'border-b border-border' : null}`}>
+    <header className={`sticky top-0 z-50 bg-white py-6 ${scrolling ? 'border-b border-border mt-0' : 'mt-4'}`}>
       <div className="contain flex items-center justify-between">
         <Link className={`font-heading text-xl tracking-wider z-50 transition-colors duration-300 ${isActive ? 'text-white' : 'text-primary'}`} to="/">
           Ian Trent
@@ -44,16 +44,16 @@ const Header = ({ siteTitle }) => {
         </div>
         <nav className={`${isActive ? 'active' : 'hidden'} bg-primary`}>
           <div className="menu mt-32 contain flex flex-col font-heading text-3xl tracking-wider items-end">
-            <Link to="/" className={`mb-8 hover:text-white ${window.location.pathname === '/' ? 'text-white active' : 'text-mdgray'}`}>
+            <Link to="/" className={`mb-8 hover:text-white ${window.location.pathname === '/' ? 'text-white active' : 'text-offgray'}`}>
               Home
             </Link>
-            <Link to="/about" className={`mb-8 hover:text-white ${window.location.pathname === '/about' ? 'text-white active' : 'text-mdgray'}`}>
+            <Link to="/about" className={`mb-8 hover:text-white ${window.location.pathname === '/about' ? 'text-white active' : 'text-offgray'}`}>
               About
             </Link>
-            <Link to="/contact" className={`mb-8 hover:text-white ${window.location.pathname === '/contact' ? 'text-white active' : 'text-mdgray'}`}>
+            <Link to="/contact" className={`mb-8 hover:text-white ${window.location.pathname === '/contact' ? 'text-white active' : 'text-offgray'}`}>
               Contact
             </Link>
-            <a className="mb-8 text-mdgray hover:text-white" href={'/pdfs/Ian_Trent_Resume_2020.pdf'} target="_blank" rel="noopener noreferrer">
+            <a className="mb-8 text-offgray hover:text-white" href={'/pdfs/Ian_Trent_Resume_2020.pdf'} target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </div>

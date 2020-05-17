@@ -3,23 +3,23 @@ import Header from './header/index';
 import Footer from './footer/index';
 
 const Layout = ({ children, className }) => {
-    // const data = useStaticQuery(graphql`
-    //     query SiteTitleQuery {
-    //         site {
-    //             siteMetadata {
-    //                 title
-    //             }
-    //         }
-    //     }
-    // `)
+  // const data = useStaticQuery(graphql`
+  //     query SiteTitleQuery {
+  //         site {
+  //             siteMetadata {
+  //                 title
+  //             }
+  //         }
+  //     }
+  // `)
 
-    return (
-        <div className="layout">
-            <Header />
-            <div className={`wrapper ${className}`}>{children}</div>
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="layout">
+      <Header />
+      <main className={`wrapper ${className}`}>{children}</main>
+      {/*<Footer /> */}
+    </div>
+  );
 };
 
 export default Layout;
