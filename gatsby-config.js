@@ -5,7 +5,6 @@ module.exports = {
     author: `@ianmtrent`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -29,11 +28,19 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-postcss',
       options: {
-        trackingId: "UA-132773476-1",
-      },
+        postCssPlugins: [require('tailwindcss'), require('autoprefixer')]
+      }
     },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true
+      }
+    }
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

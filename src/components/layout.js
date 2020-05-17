@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './header/index';
 import Footer from './footer/index';
-import './../styles/app.scss';
 
 const Layout = ({ children, className }) => {
     // const data = useStaticQuery(graphql`

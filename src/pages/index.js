@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import CTA from '../components/callToAction';
-import Layout from '../components/layout';
+import Layout from './../components/layout';
 
-import SEO from '../components/seo';
+import SEO from './../components/seo';
 
 const IndexPage = () => (
     <Layout>
@@ -146,9 +145,6 @@ const IndexPage = () => (
                             View Project
                         </a>
                     </div>
-                </div>
-                <div className="cell">
-                    <CTA />
                 </div>
             </div>
         </div>
