@@ -1,97 +1,74 @@
-import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import Hamburger from './hamburger';
+import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 
-// Component
-const Header = () => {
-    const [menu, toggleMenu] = useState(false);
-    const [useClass, setClass] = useState('');
-    const [scrolling, setScrolling] = useState(false);
+const Header = ({ siteTitle }) => {
+  const [isActive, setIsActive] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
-    const toggleMobileMenu = () => {
-        if (menu) {
-            setClass('hidden');
-        } else {
-            setClass('active');
-        }
-        toggleMenu(!menu);
-    };
+  function changeClass() {
+    const scrollPosY = window.pageYOffset || document.body.scrollTop;
 
-    useEffect(() => {
-        const body = document.querySelector('body');
-        if (menu) {
-            body.style.overflow = 'hidden';
-        } else {
-            setTimeout(() => {
-                body.style.overflow = '';
-            }, 400);
-        }
+    if (scrollPosY > 30) {
+      setScrolling(true);
+    } else if (scrollPosY <= 30) {
+      setScrolling(false);
+    }
+  }
 
-        window.onscroll = function changeClass() {
-            const scrollPosY = window.pageYOffset || document.body.scrollTop;
+  useEffect(() => {
+    changeClass();
 
-            if (scrollPosY > 30) {
-                setScrolling(true);
-            } else if (scrollPosY <= 30) {
-                setScrolling(false);
-            }
-        };
-    });
+    const body = document.querySelector('body');
+    if (isActive) {
+      body.style.overflow = 'hidden';
+    } else {
+      setTimeout(() => {
+        body.style.overflow = '';
+      }, 400);
+    }
 
-    return (
-        <header className={scrolling ? 'stuck' : null}>
-            <div className="grid-container large">
-                <div className="navbar">
-                    <div
-                        className={'logo ' + (menu ? 'active' : null)}
-                        onClick={menu ? toggleMobileMenu : null}
-                    >
-                        <Link to="/">Ian Trent</Link>
-                    </div>
-                    <Hamburger
-                        isToggled={menu}
-                        toggleMobileMenu={toggleMobileMenu}
-                    />
-                    <nav className={useClass}>
-                        <div className="menu">
-                            <Link
-                                to="/"
-                                exact
-                                activeClassName="active"
-                                className="nav-link"
-                                onClick={menu ? toggleMobileMenu : null}
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                to="/about"
-                                activeClassName="active"
-                                className="nav-link"
-                                onClick={menu ? toggleMobileMenu : null}
-                            >
-                                About
-                            </Link>
-                            <Link
-                                to="/contact"
-                                activeClassName="active"
-                                className="nav-link"
-                                onClick={menu ? toggleMobileMenu : null}
-                            >
-                                Contact
-                            </Link>
-                            <a
-                                href={'/pdfs/Ian_Trent_Resume_2020.pdf'}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Resume
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
-    );
+    window.onscroll = changeClass;
+  });
+
+  return (
+    <header className={`sticky top-0 bg-white py-6 ${scrolling ? 'border-b border-border' : null}`}>
+      <div className="contain flex items-center justify-between">
+        <Link className={`font-heading text-xl tracking-wider z-50 transition-colors duration-300 ${isActive ? 'text-white' : 'text-primary'}`} to="/">
+          Ian Trent
+        </Link>
+        <div role="button" className={`hamburger relative block z-50 pointer ${isActive ? 'active' : ''}`} onClick={() => setIsActive(!isActive)}>
+          <div className="bg-primary"></div>
+          <div className="bg-primary"></div>
+          <div className="bg-primary"></div>
+        </div>
+        <nav className={`${isActive ? 'active' : 'hidden'} bg-primary`}>
+          <div className="menu mt-32 contain flex flex-col font-heading text-3xl tracking-wider items-end">
+            <Link to="/" className={`mb-8 hover:text-white ${window.location.pathname === '/' ? 'text-white active' : 'text-mdgray'}`}>
+              Home
+            </Link>
+            <Link to="/about" className={`mb-8 hover:text-white ${window.location.pathname === '/about' ? 'text-white active' : 'text-mdgray'}`}>
+              About
+            </Link>
+            <Link to="/contact" className={`mb-8 hover:text-white ${window.location.pathname === '/contact' ? 'text-white active' : 'text-mdgray'}`}>
+              Contact
+            </Link>
+            <a className="mb-8 text-mdgray hover:text-white" href={'/pdfs/Ian_Trent_Resume_2020.pdf'} target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+};
+
+Header.defaultProps = {
+  siteTitle: ``,
 };
 
 export default Header;
