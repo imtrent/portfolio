@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => {
         <Link className={`font-heading text-xl tracking-wider z-50 transition-colors duration-300 ${isActive ? 'text-white' : 'text-primary'}`} to="/">
           Ian Trent
         </Link>
-        <div role="button" className={`hamburger relative block z-50 pointer ${isActive ? 'active' : ''}`} onClick={() => setIsActive(!isActive)}>
+        <div role="button" tabIndex={0} className={`hamburger relative block z-50 pointer focus:outline-none ${isActive ? 'active' : ''}`} onClick={() => setIsActive(!isActive)} onKeyDown={(evt) => evt.keyCode === 13 && setIsActive(!isActive)}>
           <div className="bg-primary"></div>
           <div className="bg-primary"></div>
           <div className="bg-primary"></div>
