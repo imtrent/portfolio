@@ -27,9 +27,7 @@ const AboutPage = () => {
     <Layout className="about">
       <SEO
         title="About Me"
-        description="Currently, I am a
-                proud boilermaker working toward my bachelor’s degree in Web
-                Programming and Design at Purdue University."
+        description="Currently, I am pursuing a Bachelor's degree in Web Programming and Design, as well as a certificate in Entrepreneurship at Purdue University."
       />
       <div className="contain-md my-16">
         <Img fluid={query.ian.childImageSharp.fluid} />
@@ -42,7 +40,7 @@ const AboutPage = () => {
           </span>
           I&apos;m Ian Trent.
         </h1>
-        <p className="text-mdgray my-8 md:text-lg">I’m a Full Stack Developer focused on building compelling websites, and innovative web applications. Currently, I am a proud boilermaker working toward my bachelor’s degree in Web Programming and Design at Purdue University.</p>
+        <p className="text-mdgray my-8 md:text-lg">I'm a Full Stack Developer focused on building high-quality, thoughtful, and intuitive websites and web applications. Currently, I am pursuing a Bachelor's degree in Web Programming and Design, as well as a certificate in Entrepreneurship at Purdue University.</p>
         <p className="text-mdgray my-8 md:text-lg">
           As a developer at{' '}
           <a className="about link" href="http://sfp.net" target="_blank" rel="noopener noreferrer">

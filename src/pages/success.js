@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from './../components/seo';
 
 const Success = () => {
   return (
     <Layout>
+    <SEO title="Message Sent" description="Your message has been successfully sent. I will be in contact with you as soon as possible!" />
       <div className="max-height flex items-center justify-center">
         <div className="contain-sm text-center mt-16">
           <h1 className="text-3xl md:text-4xl md:text-5xl">Thank you!</h1>
