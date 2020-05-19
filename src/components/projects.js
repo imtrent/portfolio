@@ -35,7 +35,6 @@ const Projects = () => {
       }
     }
   `);
-  console.log(query);
   return (
     <div>
       <div className="bg-purple-200 mb-12 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105">
@@ -136,7 +135,7 @@ const Projects = () => {
           <Img fluid={query.moviac.childImageSharp.fluid} />
         </div>
       </div>
-      <div className="bg-blue-200 mb-12 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105">
+      <div className="bg-blue-200 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105">
         <div className="md:w-3/6 p-10 md:p-24">
           <h3 className="text-xl md:text-3xl">Safe &amp; Vault</h3>
           <p className="text-mdgray my-4">eCommerce site that sells security systems and equipment. Built during my internship at SFP.</p>
