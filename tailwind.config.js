@@ -9,6 +9,9 @@ module.exports = {
         ltgray: '#ABB2BC',
         offgray: '#a0a0a2',
       },
+      top: {
+        '1/2': '50%',
+      }
     },
     fontFamily: {
       body: ['Inter', '-apple-system', 'sans-serif'],

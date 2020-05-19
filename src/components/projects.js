@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <div>
       <div className="bg-purple-200 mb-12 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105">
-        <div className="md:w-3/6 p-10 md:p-24">
+        <div className="md:w-7/12 lg:w-6/12 p-10 md:p-24">
           <h3 className="text-xl md:text-3xl">Decore</h3>
           <p className="text-mdgray my-4">Construct a webpage layout that can be used as a bare-bones HTML/CSS starter template.</p>
           <ul className="flex mb-4 text-mdgray text-sm">
@@ -67,12 +67,12 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="hidden md:block absolute right-0 bottom-0 w-7/12 h-62 md:-mb-16 md:-mr-16 lg:-mb-24 lg:-mr-24">
+        <div className="hidden md:block absolute bottom-0 right-0 md:w-8/12 lg:w-7/12 h-62 sm:-mb-16 md:-mr-40 lg:-mb-16 lg:-mr-20">
           <Img fluid={query.decore.childImageSharp.fluid} />
         </div>
       </div>
       <div className="bg-yellow-200 mb-12 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105">
-        <div className="md:w-3/6 p-10 md:p-24">
+        <div className="md:w-7/12 lg:w-6/12 p-10 md:p-24">
           <h3 className="text-xl md:text-3xl">Whirley Pop Shop</h3>
           <p className="text-mdgray my-4">eCommerce site that sells everything popcorn related. Built during my internship at SFP.</p>
           <ul className="flex mb-4 text-mdgray text-sm">
@@ -97,12 +97,12 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="hidden md:block absolute right-0 bottom-0 md:w-10/12 lg:w-7/12 h-62 md:-mb-48 md:-mr-64 lg:-mb-24 lg:-mr-24">
+        <div className="hidden md:block absolute bottom-0 right-0 md:w-8/12 lg:w-7/12 h-62 sm:-mb-16 md:-mr-40 lg:-mb-16 lg:-mr-20">
           <Img fluid={query.whirley.childImageSharp.fluid} />
         </div>
       </div>
       <div className="bg-red-200 mb-12 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105">
-        <div className="md:w-3/6 p-10 md:p-24">
+        <div className="md:w-7/12 lg:w-6/12 p-10 md:p-24">
           <h3 className="text-xl md:text-3xl">Moviac</h3>
           <p className="text-mdgray my-4">React app that allows users to discover thousands of movies using TMDb API.</p>
           <ul className="flex mb-4 text-mdgray text-sm">
@@ -131,12 +131,12 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="hidden md:block absolute right-0 bottom-0 w-7/12 h-62 md:-mb-16 md:-mr-16 lg:-mb-24 lg:-mr-24">
+        <div className="hidden md:block absolute bottom-0 right-0 md:w-8/12 lg:w-7/12 h-62 sm:-mb-16 md:-mr-40 lg:-mb-16 lg:-mr-20">
           <Img fluid={query.moviac.childImageSharp.fluid} />
         </div>
       </div>
       <div className="bg-blue-200 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105">
-        <div className="md:w-3/6 p-10 md:p-24">
+        <div className="md:w-7/12 lg:w-6/12 p-10 md:p-24">
           <h3 className="text-xl md:text-3xl">Safe &amp; Vault</h3>
           <p className="text-mdgray my-4">eCommerce site that sells security systems and equipment. Built during my internship at SFP.</p>
           <ul className="flex mb-4 text-mdgray text-sm">
@@ -160,7 +160,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="hidden md:block absolute right-0 bottom-0 w-7/12 h-62 md:-mb-16 md:-mr-16 lg:-mb-24 lg:-mr-24">
+        <div className="hidden md:block absolute bottom-0 right-0 md:w-8/12 lg:w-7/12 h-62 sm:-mb-16 md:-mr-40 lg:-mb-16 lg:-mr-20">
           <Img fluid={query.safeandvault.childImageSharp.fluid} />
         </div>
       </div>

@@ -4,7 +4,7 @@ import Footer from './footer/index';
 
 const Layout = ({ children, className }) => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative">
       <Header />
       <main className={`wrapper ${className}`}>{children}</main>
       <Footer />

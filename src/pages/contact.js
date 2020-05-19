@@ -8,7 +8,7 @@ const Contact = () => {
       <SEO title="Contact Me" description="Have a project in mind, or just want to talk? Feel free to send me a message!" />
       <div className="contain-sm mt-16">
         <h1 className="text-3xl md:text-4xl md:text-5xl">Get In Touch</h1>
-        <p className="text-mdgray my-4 md:text-lg">Have a project in mind, or just want to talk? Feel free to send me a message!</p>
+        <p className="text-mdgray my-4 md:text-lg">Have a project in mind or just want to talk? Feel free to send me a message!</p>
         <form method="POST" name="contact" action="/success" data-netlify="true" netlify-honeypot="bot-field">
           <input name="bot-field" type="hidden" />
           <input type="hidden" name="form-name" value="contact" />

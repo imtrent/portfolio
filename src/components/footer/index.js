@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="bg-gray-100 py-24 mt-40">
     <div className="contain">
       <div className="flex justify-between items-center text-mdgray">
-        <p>© 2020 Ian Trent</p>
+        <p>© {new Date().getFullYear()} Ian Trent</p>
         <div>
           <a className="mr-10" href="https://github.com/imtrent" target="_blank" rel="noopener noreferrer">
             Github

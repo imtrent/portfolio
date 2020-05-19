@@ -1,11 +1,12 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
+import { globalHistory as history } from '@reach/router';
 
-const Header = ({ siteTitle }) => {
+const Header = (props) => {
   const [isActive, setIsActive] = useState(false);
   const [useClass, setUseClass] = useState('');
-  const [path, setPath] = useState('');
+  const { location } = history
   const [scrolling, setScrolling] = useState(false);
   
   const toggleMobileMenu = () => {
@@ -28,8 +29,6 @@ const Header = ({ siteTitle }) => {
   }
 
   useEffect(() => {
-    setPath(window.location.pathname);
-
     changeClass();
 
     const body = document.querySelector('body');
@@ -57,13 +56,13 @@ const Header = ({ siteTitle }) => {
         </div>
         <nav className={useClass}>
           <div className="menu mt-32 contain flex flex-col font-heading text-3xl tracking-wider items-end">
-            <Link to="/" className={`mb-8 hover:text-white ${path === '/' ? 'text-white active' : 'text-offgray'}`}>
+            <Link to="/" className={`mb-8 hover:text-white ${location.pathname === '/' ? 'text-white active' : 'text-offgray'}`}>
               Home
             </Link>
-            <Link to="/about" className={`mb-8 hover:text-white ${path === '/about' ? 'text-white active' : 'text-offgray'}`}>
+            <Link to="/about" className={`mb-8 hover:text-white ${location.pathname === '/about' ? 'text-white active' : 'text-offgray'}`}>
               About
             </Link>
-            <Link to="/contact" className={`mb-8 hover:text-white ${path === '/contact' ? 'text-white active' : 'text-offgray'}`}>
+            <Link to="/contact" className={`mb-8 hover:text-white ${location.pathname === '/contact' ? 'text-white active' : 'text-offgray'}`}>
               Contact
             </Link>
             <a className="mb-8 text-offgray hover:text-white" href={'/pdfs/Ian_Trent_Resume_2020.pdf'} target="_blank" rel="noopener noreferrer">
