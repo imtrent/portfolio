@@ -45,7 +45,7 @@ const AboutPage = () => {
         <p className="text-mdgray my-8 md:text-lg">I’m a Full Stack Developer focused on building compelling websites, and innovative web applications. Currently, I am a proud boilermaker working toward my bachelor’s degree in Web Programming and Design at Purdue University.</p>
         <p className="text-mdgray my-8 md:text-lg">
           As a developer at{' '}
-          <a className="link" href="http://sfp.net" target="_blank" rel="noopener noreferrer">
+          <a className="about link" href="http://sfp.net" target="_blank" rel="noopener noreferrer">
             SFP
           </a>
           , I have had the opportunity to work along-side web development professionals in notable projects. I value the ideas of hard-work and persistence. These values have aided my career as a developer and have shaped me into the person I am today.

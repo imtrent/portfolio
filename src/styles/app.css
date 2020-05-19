@@ -29,6 +29,10 @@ h6 {
   transition: 0.3s ease;
 }
 
+.about.link {
+  padding-bottom: 0;
+}
+
 @keyframes bounce {
   0% {
     left: 0;
