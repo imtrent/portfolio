@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 const Header = ({ siteTitle }) => {
   const [isActive, setIsActive] = useState(false);
+  const [path, setPath] = useState('');
   const [scrolling, setScrolling] = useState(false);
 
   function changeClass() {
@@ -17,6 +18,8 @@ const Header = ({ siteTitle }) => {
   }
 
   useEffect(() => {
+    setPath(window.location.pathname);
+
     changeClass();
 
     const body = document.querySelector('body');
@@ -44,13 +47,13 @@ const Header = ({ siteTitle }) => {
         </div>
         <nav className={`${isActive ? 'active' : 'hidden'} bg-primary`}>
           <div className="menu mt-32 contain flex flex-col font-heading text-3xl tracking-wider items-end">
-            <Link to="/" className={`mb-8 hover:text-white ${window.location.pathname === '/' ? 'text-white active' : 'text-offgray'}`}>
+            <Link to="/" className={`mb-8 hover:text-white ${path === '/' ? 'text-white active' : 'text-offgray'}`}>
               Home
             </Link>
-            <Link to="/about" className={`mb-8 hover:text-white ${window.location.pathname === '/about' ? 'text-white active' : 'text-offgray'}`}>
+            <Link to="/about" className={`mb-8 hover:text-white ${path === '/about' ? 'text-white active' : 'text-offgray'}`}>
               About
             </Link>
-            <Link to="/contact" className={`mb-8 hover:text-white ${window.location.pathname === '/contact' ? 'text-white active' : 'text-offgray'}`}>
+            <Link to="/contact" className={`mb-8 hover:text-white ${path === '/contact' ? 'text-white active' : 'text-offgray'}`}>
               Contact
             </Link>
             <a className="mb-8 text-offgray hover:text-white" href={'/pdfs/Ian_Trent_Resume_2020.pdf'} target="_blank" rel="noopener noreferrer">
