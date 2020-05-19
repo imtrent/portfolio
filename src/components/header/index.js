@@ -4,8 +4,18 @@ import React, { useState, useEffect } from 'react';
 
 const Header = ({ siteTitle }) => {
   const [isActive, setIsActive] = useState(false);
+  const [useClass, setUseClass] = useState('');
   const [path, setPath] = useState('');
   const [scrolling, setScrolling] = useState(false);
+  
+  const toggleMobileMenu = () => {
+    if (isActive) {
+      setUseClass('hidden');
+    } else {
+      setUseClass('active');
+    }
+    setIsActive(!isActive);
+};
 
   function changeClass() {
     const scrollPosY = window.pageYOffset || document.body.scrollTop;
@@ -40,12 +50,12 @@ const Header = ({ siteTitle }) => {
         <Link className={`font-heading text-xl tracking-wider z-50 transition-colors duration-300 ${isActive ? 'text-white' : 'text-primary'}`} to="/">
           Ian Trent
         </Link>
-        <div role="button" tabIndex={0} className={`hamburger relative block z-50 pointer focus:outline-none ${isActive ? 'active' : ''}`} onClick={() => setIsActive(!isActive)} onKeyDown={(evt) => evt.keyCode === 13 && setIsActive(!isActive)}>
+        <div role="button" tabIndex={0} className={`hamburger relative block z-50 pointer focus:outline-none ${isActive ? 'active' : ''}`} onClick={toggleMobileMenu} onKeyDown={(evt) => evt.keyCode === 13 && setIsActive(!isActive)}>
           <div className="bg-primary"></div>
           <div className="bg-primary"></div>
           <div className="bg-primary"></div>
         </div>
-        <nav className={`${isActive ? 'active' : 'hidden'} bg-primary`}>
+        <nav className={useClass}>
           <div className="menu mt-32 contain flex flex-col font-heading text-3xl tracking-wider items-end">
             <Link to="/" className={`mb-8 hover:text-white ${path === '/' ? 'text-white active' : 'text-offgray'}`}>
               Home
