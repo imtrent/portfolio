@@ -1,10 +1,12 @@
-# Ian Trent
+## Ian Trent
 
-#### [iantrent.com](https://iantrent.com)
+### [iantrent.com](https://iantrent.com)
+
+<img src="./preview.jpg" alt="Preview of Ian Trent's Portfolio">
 
 ### About Me
 
-I’m a Full-Stack Developer focused on building compelling websites, and innovative web applications. Currently, I am a proud boilermaker working toward my bachelor’s degree in Web Programming and Design at Purdue University.
+I'm a Full Stack Developer focused on building high-quality, thoughtful, and intuitive websites and web applications. Currently, I'm pursuing a Bachelor's degree in Web Programming and Design, as well as a certificate in Entrepreneurship at Purdue University.
 
 As a developer at SFP, I have had the opportunity to work along-side web development professionals in notable projects. I value the ideas of hard-work and persistence. These values have aided my career as a developer and have shaped me into the person I am today.
 
