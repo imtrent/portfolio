@@ -9,7 +9,7 @@ import SEO from './../components/seo';
 const IndexPage = () => (
   <Layout>
     <SEO title="Full Stack Developer" description="Ian Trent &mdash; Full Stack Developer based in Lafayette, Indiana." />
-    <section className="contain my-32 md:mb-48 mt-32">
+    <section className="contain mt-16 mb-32 md:my-32">
       <div className="inline-block bg-green-100 rounded px-4 py-2 mb-8 shadow-inner">
         <div className="flex items-center">
           {' '}

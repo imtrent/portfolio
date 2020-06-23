@@ -25,11 +25,8 @@ const AboutPage = () => {
   `);
   return (
     <Layout className="about">
-      <SEO
-        title="About Me"
-        description="Currently, I'm pursuing a Bachelor's degree in Web Programming and Design, as well as a certificate in Entrepreneurship at Purdue University."
-      />
-      <div className="contain-md my-16">
+      <SEO title="About Me" description="Currently, I'm pursuing a Bachelor's degree in Web Programming and Design, as well as a certificate in Entrepreneurship at Purdue University." />
+      <div className="contain-md my-8 md:my-16">
         <Img fluid={query.ian.childImageSharp.fluid} />
       </div>
       <div className="contain-sm">

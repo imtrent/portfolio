@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <Layout className="contact">
       <SEO title="Contact Me" description="Have a project in mind or just want to talk? Feel free to send me a message!" />
-      <div className="contain-sm mt-16">
+      <div className="contain-sm mt-8 md:mt-16">
         <h1 className="text-3xl md:text-4xl md:text-5xl">Get In Touch</h1>
         <p className="text-mdgray my-4 md:text-lg">Have a project in mind or just want to talk? Feel free to send me a message!</p>
         <form method="POST" name="contact" action="/success" data-netlify="true" netlify-honeypot="bot-field">
@@ -30,7 +30,7 @@ const Contact = () => {
             <label htmlFor="subject" className="block mb-1 leading-5 text-mdgray">
               Subject
             </label>
-            <input type="text" id="subject" name="subject" className="appearance-none border rounded w-full py-2 px-2 text-mdgray leading-tight focus:border-ltgray focus:outline-none" required/>
+            <input type="text" id="subject" name="subject" className="appearance-none border rounded w-full py-2 px-2 text-mdgray leading-tight focus:border-ltgray focus:outline-none" required />
           </div>
           <div>
             <label htmlFor="message" className="block mb-1 leading-5 text-mdgray">
