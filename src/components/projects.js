@@ -74,7 +74,7 @@ const Projects = () => {
       <div className="bg-yellow-200 mb-12 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105 shadow-inner">
         <div className="md:w-7/12 lg:w-6/12 p-10 md:p-24">
           <h3 className="text-xl md:text-3xl">Whirley Pop Shop</h3>
-          <p className="text-mdgray my-4">eCommerce site that sells everything popcorn related. Built during my internship at SFP.</p>
+          <p className="text-mdgray my-4">eCommerce site that sells everything popcorn related. Built during my time at SFP.</p>
           <ul className="flex mb-4 text-mdgray text-sm">
             <li className="mr-4">Laravel</li>
             <li className="mr-4">PHP</li>
@@ -138,7 +138,7 @@ const Projects = () => {
       <div className="bg-blue-200 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105 shadow-inner">
         <div className="md:w-7/12 lg:w-6/12 p-10 md:p-24">
           <h3 className="text-xl md:text-3xl">Safe &amp; Vault</h3>
-          <p className="text-mdgray my-4">eCommerce site that sells security systems and equipment. Built during my internship at SFP.</p>
+          <p className="text-mdgray my-4">eCommerce site that sells security systems and equipment. Built during my time at SFP.</p>
           <ul className="flex mb-4 text-mdgray text-sm">
             <li className="mr-4">Laravel</li>
             <li className="mr-4">PHP</li>
