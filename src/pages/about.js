@@ -30,14 +30,14 @@ const AboutPage = () => {
         <Img fluid={query.ian.childImageSharp.fluid} />
       </div>
       <div className="contain-sm">
-        <h1 className="flex items-center text-3xl md:text-4xl md:text-5xl">
+        <h1 className="flex items-center text-3xl md:text-4xl">
           Hi!
           <span className="w-12 mx-3">
             <Img fluid={query.wave.childImageSharp.fluid} />
           </span>
           I&apos;m Ian Trent.
         </h1>
-        <p className="text-mdgray my-8 md:text-lg">I'm a Full Stack Developer focused on building high-quality, thoughtful, and intuitive websites and web applications. Currently, I'm pursuing a Bachelor's degree in Web Programming and Design, as well as a certificate in Entrepreneurship at Purdue University.</p>
+        <p className="text-mdgray my-8 md:text-lg">I'm a Software Developer focused on building high-quality, thoughtful, and intuitive websites and web applications. Currently, I'm pursuing a Bachelor's degree in Web Programming and Design, as well as a certificate in Entrepreneurship at Purdue University.</p>
         <p className="text-mdgray my-8 md:text-lg">
           As a developer at{' '}
           <a className="about link" href="http://sfp.net" target="_blank" rel="noopener noreferrer">
@@ -49,11 +49,11 @@ const AboutPage = () => {
         <div className="max-w-md">
           <h2 className="text-xl md:text-3xl mb-4">My Go-To Stack</h2>
           <ul className="ml-5 flex flex-wrap md:text-lg text-mdgray list-disc">
-            <li className="w-3/6 p-2">React</li>
-            <li className="w-3/6 p-2">Redux</li>
             <li className="w-3/6 p-2">Node.js</li>
             <li className="w-3/6 p-2">Express.js</li>
             <li className="w-3/6 p-2">PostgreSQL</li>
+            <li className="w-3/6 p-2">React</li>
+            <li className="w-3/6 p-2">Redux</li>
           </ul>
         </div>
       </div>
