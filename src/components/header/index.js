@@ -65,7 +65,7 @@ const Header = (props) => {
             <Link to="/contact" className={`mb-8 hover:text-white ${location.pathname === '/contact' ? 'text-white active' : 'text-offgray'}`} onClick={isActive ? toggleMobileMenu : null}>
               Contact
             </Link>
-            <a className="mb-8 text-offgray hover:text-white" href={'/pdfs/Ian_Trent_Resume.pdf'} target="_blank" rel="noopener noreferrer" onClick={isActive ? toggleMobileMenu : null}>
+            <a className="mb-8 text-offgray hover:text-white" href={'/pdfs/Ian_Trent_Resume_2020.pdf'} target="_blank" rel="noopener noreferrer" onClick={isActive ? toggleMobileMenu : null}>
               Resume
             </a>
           </div>

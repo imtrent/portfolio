@@ -49,11 +49,12 @@ const AboutPage = () => {
         <div className="max-w-md">
           <h2 className="text-xl md:text-3xl mb-4">My Go-To Stack</h2>
           <ul className="ml-5 flex flex-wrap md:text-lg text-mdgray list-disc">
-            <li className="w-3/6 p-2">Node.js</li>
-            <li className="w-3/6 p-2">Express.js</li>
+            <li className="w-3/6 p-2">TypeScript</li>
+            <li className="w-3/6 p-2">GraphQL</li>
             <li className="w-3/6 p-2">PostgreSQL</li>
+            <li className="w-3/6 p-2">Redis</li>
             <li className="w-3/6 p-2">React</li>
-            <li className="w-3/6 p-2">Redux</li>
+            <li className="w-3/6 p-2">SCSS</li>
           </ul>
         </div>
       </div>
