@@ -8,6 +8,14 @@ const Footer = () => (
         <div>
           <a
             className="mr-10"
+            href="https://twitter.com/ianmtrent"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+          <a
+            className="mr-10"
             href="https://github.com/imtrent"
             target="_blank"
             rel="noopener noreferrer"
@@ -15,19 +23,11 @@ const Footer = () => (
             Github
           </a>
           <a
-            className="mr-10"
             href="https://www.linkedin.com/in/ianmtrent/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Linkedin
-          </a>
-          <a
-            href="https://dev.to/iantrent"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dev.to
           </a>
         </div>
       </div>

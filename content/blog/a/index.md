@@ -1,9 +1,18 @@
 ---
 title: GraphQL Authentication With JSON Web Tokens (JWT)
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "Learn how to setup authentication in TypeScript GraphQL with JSON Web Tokens."
 featuredImage: ./graphql-blog.jpg
-tags: "GraphQL, TypeScript, Node, JavaScript"
+tags:
+  - GraphQL
+  - TypeScript
+  - Node
+  - JavaScript
+tagColors:
+  - pink
+  - blue
+  - green
+  - yellow
 ---
 
 At first, authentication in GraphQL might seem a little challenging, however, if you’ve ever implemented it before in Express.js, it is quite similar.
