@@ -1,10 +1,34 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ location }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+      blogs: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+      ) {
+        nodes {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  `)
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.blogs.nodes
 
@@ -54,30 +78,3 @@ const BlogIndex = ({ data, location }) => {
 }
 
 export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-          tags
-        }
-      }
-    }
-  }
-`

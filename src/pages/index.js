@@ -25,8 +25,6 @@ const BlogIndex = ({ location }) => {
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            tags
-            tagColors
           }
         }
       }
@@ -35,7 +33,6 @@ const BlogIndex = ({ location }) => {
 
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.blogs.nodes
-  console.log(posts)
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -65,10 +62,10 @@ const BlogIndex = ({ location }) => {
           </Link>
         </div>
       </section>
-      <section className="bg-gray-100 mb-32 py-16">
+      {posts.length > 0 && (<section className="bg-gray-100 mb-32 py-16">
         <div className="contain">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl">Writing</h2>
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-3xl">Read My Thoughts</h2>
             <Link className="text-mdgray" to="/blog">
               View All
             </Link>
@@ -81,9 +78,8 @@ const BlogIndex = ({ location }) => {
                 <li key={post.fields.slug}>
                   <Link to={post.fields.slug} itemProp="url">
                     <article
-                      className={`post-list-item bg-white p-4 lg:w-1/2 rounded shadow-lg ${
-                        !index ? "md:mr-4 mb-6 md:mb-0" : "md:ml-4"
-                      }`}
+                      className={`post-list-item bg-white p-4 lg:w-1/2 rounded shadow-lg ${!index ? "md:mr-4 mb-6 md:mb-0" : "md:ml-4"
+                        }`}
                       itemScope
                       itemType="http://schema.org/Article"
                     >
@@ -103,17 +99,8 @@ const BlogIndex = ({ location }) => {
                           }}
                           itemProp="description"
                         />
+                        <p className="mt-6 text-blue-500">Read More {'->'}</p>
                       </section>
-                      <ul className="flex mt-4">
-                        {post.frontmatter.tags.map((tech, i) => (
-                          <li
-                            key={i}
-                            className={`mr-4 text-xs px-2 py-1 rounded-full bg-${post.frontmatter.tagColors[i]}-100 text-${post.frontmatter.tagColors[i]}-800`}
-                          >
-                            {tech}
-                          </li>
-                        ))}
-                      </ul>
                     </article>
                   </Link>
                 </li>
@@ -121,7 +108,7 @@ const BlogIndex = ({ location }) => {
             })}
           </ol>
         </div>
-      </section>
+      </section>)}
       <section className="contain">
         <h2 className="text-2xl md:text-4xl mb-8">Some Things I've Built</h2>
         <Projects />
