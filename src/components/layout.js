@@ -1,15 +1,17 @@
-import React from 'react';
-import Header from './header/index';
-import Footer from './footer/index';
+import React from "react"
+import Navigation from "../components/Navigation"
+import Footer from "../components/Footer"
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
+deckDeckGoHighlightElement()
 
-const Layout = ({ children, className }) => {
+const Layout = ({ location, title, children }) => {
   return (
-    <div className="relative">
-      <Header />
-      <main className={`wrapper ${className}`}>{children}</main>
+    <div>
+      <Navigation />
+      <main>{children}</main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
