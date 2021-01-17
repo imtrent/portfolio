@@ -29,7 +29,7 @@ const Index = ({ location }) => {
           <div className="flex items-center">
             <div className="h-2 w-2 bg-green-500 rounded-full mr-4" />
             <span className="text-sm md:text-base text-green-500">
-              Seeking a full-time role for after graduation
+              Seeking a full-time role for after May 2021 graduation
             </span>
           </div>
         </div>
