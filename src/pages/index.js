@@ -21,8 +21,8 @@ const BlogIndex = ({ location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title="Software Developer"
-        description="Ian Trent &mdash; Software Developer based in Lafayette, Indiana."
+        title="Software Engineer"
+        description="Ian Trent &mdash; Software Engineer based in Lafayette, Indiana."
       />
       <section className="contain mt-16 mb-32 md:my-32">
         <div className="inline-block bg-green-100 rounded px-4 py-2 mb-8 shadow-inner">
@@ -34,7 +34,7 @@ const BlogIndex = ({ location }) => {
           </div>
         </div>
         <h1 className="text-3xl md:text-5xl">
-          Ian Trent &mdash; Software Developer based in Lafayette, Indiana.
+          Ian Trent &mdash; Software Engineer based in Lafayette, Indiana.
         </h1>
         <p className="text-mdgray my-8 md:text-lg">
           Purdue Boilermaker who's focused on building high-quality, thoughtful,
