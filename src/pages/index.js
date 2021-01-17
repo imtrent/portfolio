@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projects from "../components/Projects"
 
-const BlogIndex = ({ location }) => {
+const Index = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -54,4 +54,4 @@ const BlogIndex = ({ location }) => {
   )
 }
 
-export default BlogIndex
+export default Index
