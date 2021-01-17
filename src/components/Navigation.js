@@ -100,7 +100,7 @@ const Header = props => {
             </a>
             <a
               className="mb-8 text-offgray hover:text-white"
-              href={"/pdfs/Ian_Trent_Resume_2020.pdf"}
+              href={"/pdfs/Ian_Trent_Resume_2021.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               onClick={isActive ? toggleMobileMenu : null}
