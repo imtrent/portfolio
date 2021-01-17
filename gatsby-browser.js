@@ -6,7 +6,7 @@
 // // custom CSS styles
 // import "./src/style.css"
 // app CSS styles
-import "./src/app.css"
+import "./src/styles/app.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
