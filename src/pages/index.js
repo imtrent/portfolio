@@ -25,14 +25,6 @@ const Index = ({ location }) => {
         description="Ian Trent &mdash; Software Engineer based in Lafayette, Indiana."
       />
       <section className="contain mt-16 mb-32 md:my-32">
-        <div className="inline-block bg-green-100 rounded px-4 py-2 mb-8 shadow-inner">
-          <div className="flex items-center">
-            <div className="h-2 w-2 bg-green-500 rounded-full mr-4" />
-            <span className="text-sm md:text-base text-green-500">
-              Seeking a full-time role for after May 2021 graduation
-            </span>
-          </div>
-        </div>
         <h1 className="text-3xl md:text-5xl">
           Ian Trent &mdash; Software Engineer based in Lafayette, Indiana.
         </h1>
